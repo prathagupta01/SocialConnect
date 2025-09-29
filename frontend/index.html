@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - SocialConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">SocialConnect</a>
+                <div class="nav-menu">
+                    <a href="feed.html" class="nav-link">Feed</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                    <a href="#" id="logout-btn" class="nav-link">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <div class="feed-container">
+                    <!-- Create Post -->
+                    <div class="create-post">
+                        <form id="create-post-form">
+                            <textarea id="post-content" placeholder="What's on your mind?" required></textarea>
+                            <div class="post-actions">
+                                <button type="submit" class="btn btn-primary">Post</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Feed Posts -->
+                    <div id="feed-container">
+                        <!-- Posts will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/feed.js"></script>
+</body>
+</html>
