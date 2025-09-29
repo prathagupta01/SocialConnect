@@ -1,0 +1,12 @@
+{
+  "name": "social-media-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for social media app",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
