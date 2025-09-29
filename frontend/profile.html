@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SocialConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">SocialConnect</a>
+                <div class="nav-menu">
+                    <a href="feed.html" class="nav-link">Feed</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                    <a href="#" id="logout-btn" class="nav-link">Logout</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Profile Header -->
+                <div class="profile-header">
+                    <img id="profile-avatar" src="https://via.placeholder.com/120" alt="Profile Avatar" class="profile-avatar">
+                    <h1 id="profile-name" class="profile-name">Username</h1>
+                    <p id="profile-bio" class="profile-bio">User bio</p>
+                    
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <div id="posts-count" class="stat-value">0</div>
+                            <div class="stat-label">Posts</div>
+                        </div>
+                        <div class="stat">
+                            <div id="followers-count" class="stat-value">0</div>
+                            <div class="stat-label">Followers</div>
+                        </div>
+                        <div class="stat">
+                            <div id="following-count" class="stat-value">0</div>
+                            <div class="stat-label">Following</div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-actions">
+                        <button class="btn">Edit Profile</button>
+                    </div>
+                </div>
+
+                <!-- User Posts -->
+                <div id="user-posts">
+                    <!-- Posts will be loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
